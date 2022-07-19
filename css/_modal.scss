@@ -1,0 +1,48 @@
+.modal-error {
+  display: none;
+  pointer-events: none;
+  position: absolute;
+
+  //   left: 50%;
+  //   top: 50%;
+  place-content: center;
+  height: 82vh;
+  width: 100%;
+  background: $background-color;
+  p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $main-color;
+    span {
+      color: rgb(255, 61, 61);
+    }
+  }
+}
+.modal-guide {
+  display: none;
+  pointer-events: none;
+  position: absolute;
+  place-content: center;
+  height: 84vh;
+  width: 100%;
+  z-index: 9999;
+  video {
+    border-radius: 10px;
+  }
+  img {
+    background: $main-color;
+    cursor: pointer;
+  }
+  p {
+    color: rgb(190, 190, 190);
+    padding: 0.2rem 0;
+
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.modal-guide.active {
+  display: grid;
+  pointer-events: unset;
+  background: #003a55;
+}

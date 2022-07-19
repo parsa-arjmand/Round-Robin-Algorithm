@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Round Robin Implementation</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="title-desc">
+      <ul>
+        <li>
+          Alogorithm:
+          <span class="my-name">Round Robin</span>
+        </li>
+
+        <li>subject: <span>Operating systems</span></li>
+      </ul>
+    </header>
+    <main>
+      <section class="left-col">
+        <p class="mini-title">add your inputs below</p>
+        <section class="field">
+          <div class="process-holder">
+            <input
+              type="text"
+              id="process"
+              class="main-input"
+              placeholder="process"
+              required
+            />
+          </div>
+          <div class="explosion-holder">
+            <input
+              type="number"
+              id="explosion"
+              class="main-input"
+              placeholder="cpu burst"
+              min="0"
+              required
+            />
+          </div>
+          <div class="entry-holder">
+            <input
+              type="number"
+              id="entry"
+              class="main-input"
+              placeholder="arrival time"
+              min="0"
+              required
+            />
+          </div>
+
+          <button class="submit">Add Process</button>
+        </section>
+        <div class="table-wrapper">
+          <table class="table-main">
+            <thead>
+              <tr>
+                <th>process</th>
+                <th>CPU burst</th>
+                <th>arrival time</th>
+              </tr>
+            </thead>
+          </table>
+          <p class="popup">no item added yet</p>
+          <div class="button-wrapper">
+            <div class="quantom-wrapper">
+              <input
+                type="number"
+                placeholder="enter quantom"
+                id="quantom"
+                class="quantom"
+                min="0"
+                required
+              />
+            </div>
+            <button class="submit-all">Submit All</button>
+          </div>
+        </div>
+      </section>
+      <section class="middle-col">
+        <div class="algo-name">
+          <div class="img-wrapper">
+            <img src="./assets/icons8-double-right.gif" alt="" />
+          </div>
+          <button class="guide">guide</button>
+          <h1 class="ml9">
+            <span class="text-wrapper">
+              <span class="letters">Round Robin Alogorithm</span>
+            </span>
+          </h1>
+        </div>
+        <div class="anim-overlay"></div>
+        <div class="gantt-section">
+          <ul id="gantt-chart"></ul>
+          <ul id="gantt-time-line"></ul>
+        </div>
+        <div class="average">
+          <h2>the average waiting time is: <span class="avg-num"></span></h2>
+          <p>For inserting new values refresh the page</p>
+        </div>
+      </section>
+
+      <div class="modal-error">
+        <p>
+          please insert the arrival time values in an ascending order <br />
+          refresh the page try again
+        </p>
+      </div>
+      <div class="modal-guide">
+        <div class="close-modal">
+          <img src="./assets/icons8-close.svg" alt="icon" />
+        </div>
+        <img
+          style="width: 80%; border-radius: 8px; cursor: unset"
+          class="video-guide"
+          src="./assets/guide1.png"
+          alt="guide"
+        />
+      </div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

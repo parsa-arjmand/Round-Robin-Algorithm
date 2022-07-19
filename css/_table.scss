@@ -1,0 +1,116 @@
+.mini-title {
+  color: rgb(83, 83, 83);
+  margin-left: 2rem;
+}
+.mini-title.saved {
+  font-weight: bold;
+  padding: 0.7rem 0.4rem;
+  width: 88%;
+  color: black;
+  background: #d8ffec;
+  font-size: 1rem;
+  border-radius: 7px;
+}
+.field {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-top: 1rem;
+  margin-left: 2rem;
+  font-family: "poppins";
+  .process-holder,
+  .explosion-holder,
+  .entry-holder {
+    width: 80%;
+  }
+  .submit {
+    grid-column: 2/3;
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 7px;
+    background: $main-color;
+    color: #002333;
+    font-weight: bold;
+    font-family: "poppins";
+    cursor: pointer;
+    width: 75%;
+  }
+
+  input {
+    padding: 0.8rem 1rem;
+    border-radius: 7px;
+    background: $light-background;
+    width: 100%;
+    color: rgb(85, 85, 85);
+    border: 1px solid rgb(185, 185, 185);
+  }
+}
+.table-wrapper {
+  width: 90%;
+  margin: auto;
+  p {
+    margin-top: 1rem;
+    background: $light-background;
+    color: rgb(104, 104, 104);
+    padding: 1rem 0 1rem 0.5rem;
+  }
+}
+.button-wrapper {
+  display: grid;
+  grid-template-columns: 10rem 15rem 1fr;
+}
+.submit-all {
+  transition: 0.2s all ease;
+  &:hover {
+    background: transparent;
+    border: 2px solid $background-color;
+    color: $background-color;
+  }
+  grid-column: 2/3;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 7px;
+  background: $background-color;
+  color: $light-background;
+  font-weight: bold;
+  font-family: "poppins";
+  cursor: pointer;
+  width: 75%;
+  margin: 2rem 0 0 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.quantom-wrapper {
+  grid-column: 1/2;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+input.quantom {
+  padding: 0.8rem 1rem;
+  border-radius: 7px;
+  border: 2px solid rgb(185, 185, 185);
+  background: $light-background;
+  width: 100%;
+  color: rgb(85, 85, 85);
+}
+
+.table-main {
+  margin-top: 2rem;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  tr:nth-child(odd) {
+    background: $light-background;
+  }
+  th {
+    padding: 1rem;
+  }
+  th:last-child {
+    width: 30%;
+  }
+  td {
+    text-align: center;
+    padding: 1rem;
+  }
+}
