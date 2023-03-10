@@ -7,7 +7,6 @@ Simulating round Robin CPU scheduling algorithm using vanilla javascript. This a
 
 clone this project:
 ```
-https://github.com/dev-parsa/Round-Robin-Algorithm.git
+git clone https://github.com/dev-parsa/Round-Robin-Algorithm.git
 ```
-run the index.html file to run the project <br/>
-open it with your code editor to edit the code
+to preview open index.html 
